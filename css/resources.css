@@ -1,0 +1,106 @@
+/* resources.css */
+.container {
+    max-width: 1200px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.resource-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.resource-header h1 { font-size: 2.5rem; color: var(--text); }
+.resource-header p { color: var(--text-muted); margin-top: 10px; }
+
+/* Category Sections */
+.category-section {
+    margin-bottom: 80px;
+}
+
+.category-title {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 30px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.category-title .icon {
+    font-size: 1.8rem;
+}
+
+.category-title h2 {
+    font-size: 1.5rem;
+    color: var(--text);
+}
+
+/* Resource Grid */
+.resource-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 25px;
+}
+
+/* Modern Resource Card */
+.res-card {
+    background: var(--white);
+    padding: 35px 25px 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+    position: relative;
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.res-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+}
+
+.card-badge {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    transform: translateY(-50%);
+    padding: 4px 12px;
+    font-size: 0.75rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    border-radius: 4px;
+}
+
+/* Category Colors */
+.res-card.free { border: 1px solid #dcfce7; }
+.free .card-badge { background: #22c55e; color: white; }
+
+.res-card.paid { border: 1px solid #fef3c7; }
+.paid .card-badge { background: #f59e0b; color: white; }
+
+.res-card h3 {
+    font-size: 1.25rem;
+    margin-bottom: 10px;
+    color: var(--text);
+}
+
+.res-card p {
+    font-size: 0.9rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.res-card a {
+    margin-top: auto;
+    text-decoration: none;
+    color: var(--primary);
+    font-weight: 600;
+    font-size: 0.9rem;
+    transition: 0.2s;
+}
+
+.res-card a:hover {
+    text-decoration: underline;
+}

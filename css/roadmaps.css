@@ -1,0 +1,38 @@
+/* roadmaps.css */
+.container { max-width: 1200px; margin: 40px auto; padding: 0 5%; }
+.page-title { text-align: center; font-size: 2.2rem; margin-bottom: 10px; }
+.section-desc { text-align: center; color: var(--text-muted); margin-bottom: 50px; }
+
+/* Timeline Styling */
+.v-timeline { position: relative; max-width: 800px; margin: 0 auto; padding-left: 60px; border-left: 3px solid #e2e8f0; }
+.time-item { position: relative; margin-bottom: 50px; }
+.year-circle { position: absolute; left: -83px; top: 0; width: 45px; height: 45px; background: var(--primary); color: white; display: flex; align-items: center; justify-content: center; border-radius: 50%; font-weight: 700; border: 4px solid var(--white); }
+.time-item h4 { font-size: 1.3rem; margin-bottom: 8px; color: var(--text); }
+.time-item p { color: var(--text-muted); line-height: 1.6; }
+
+.divider { margin: 80px 0; border: 0; border-top: 1px solid #e2e8f0; }
+
+/* Career Grid */
+.career-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.career-card { background: var(--white); padding: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); display: flex; flex-direction: column; border: 1px solid #f1f5f9; transition: transform 0.3s ease; }
+.career-card:hover { transform: translateY(-8px); border-color: var(--primary); }
+
+.card-top { margin-bottom: 15px; }
+.tag { font-size: 0.7rem; font-weight: 700; padding: 4px 10px; border-radius: 20px; text-transform: uppercase; }
+.tag.blue { background: #eff6ff; color: #2563eb; }
+.tag.purple { background: #f5f3ff; color: #7c3aed; }
+.tag.green { background: #ecfdf5; color: #10b981; }
+.tag.orange { background: #fff7ed; color: #f97316; }
+.tag.red { background: #fef2f2; color: #ef4444; }
+.tag.teal { background: #f0fdfa; color: #0d9488; }
+.tag.dark { background: #1e293b; color: white; }
+.tag.grey { background: #f8fafc; color: #64748b; }
+
+.career-card h3 { margin-bottom: 10px; }
+.career-card p { font-size: 0.9rem; color: var(--text-muted); margin-bottom: 20px; line-height: 1.5; }
+
+.skills { display: flex; flex-wrap: wrap; gap: 8px; margin-bottom: 25px; }
+.skills span { background: #f1f5f9; padding: 4px 10px; border-radius: 4px; font-size: 0.75rem; font-weight: 600; color: #475569; }
+
+.road-btn { margin-top: auto; text-align: center; padding: 10px; text-decoration: none; color: var(--primary); border: 1px solid var(--primary); border-radius: 6px; font-weight: 600; font-size: 0.9rem; transition: 0.3s; }
+.road-btn:hover { background: var(--primary); color: white; }

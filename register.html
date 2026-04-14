@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register | PlacementPath</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <nav>
+        <a href="index.html" class="logo">Placement<span>Path</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="roadmaps.html">Roadmaps</a></li>
+        </ul>
+    </nav>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Join the Community</h2>
+                <p>Set up your profile to start your journey</p>
+            </div>
+
+            <div id="statusMsg" class="status-msg"></div>
+            
+            <form id="regForm">
+                <div class="input-group">
+                    <label>Full Name</label>
+                    <input type="text" id="name" placeholder="Enter your name" required>
+                </div>
+                
+                <div class="input-group">
+                    <label>College Email</label>
+                    <input type="email" id="email" placeholder="Enter your email" required>
+                </div>
+
+                <div style="display: flex; gap: 15px;">
+                    <div class="input-group" style="flex: 1.5;">
+                        <label>Reg No.</label>
+                        <input type="text" id="regNo" placeholder="Enter Reg No." required>
+                    </div>
+                    <div class="input-group" style="flex: 1;">
+                        <label>CGPA</label>
+                        <input type="number" step="0.01" id="cgpa" placeholder="0.0" required>
+                    </div>
+                </div>
+
+                <div class="input-group">
+                    <label>Create Password</label>
+                    <div class="password-wrapper">
+                        <input type="password" id="pass" placeholder="Enter password" required>
+                        <i class="fa-regular fa-eye" id="toggleRegPassword"></i>
+                    </div>
+                </div>
+                
+                <button type="submit" class="btn-submit">Create Account</button>
+            </form>
+
+            <div class="auth-footer">
+                Already a member? <a href="login.html">Sign In</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/auth.js"></script>
+</body>
+</html>

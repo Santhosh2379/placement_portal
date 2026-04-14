@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Login | PlacementPath</title>
+    <link rel="stylesheet" href="css/global.css">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav>
+        <a href="index.html" class="logo">Placement<span>Path</span></a>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="companies.html">Companies</a></li>
+            <li><a href="roadmaps.html">Roadmaps</a></li>
+        </ul>
+        <ul class="nav-auth">
+            <li><a href="login.html" class="btn-auth btn-login">Student Login</a></li>
+        </ul>
+    </nav>
+
+    <div class="auth-wrapper">
+        <div class="auth-card">
+            <div class="auth-header">
+                <h2>Admin Access</h2>
+                <p>Sign in to view registered students and portal activity.</p>
+            </div>
+
+            <div id="statusMsg" class="status-msg"></div>
+
+            <form id="adminLoginForm">
+                <div class="input-group">
+                    <label>Admin Email</label>
+                    <input type="email" id="adminEmail" placeholder="Enter admin email" required>
+                </div>
+
+                <div class="input-group">
+                    <label>Password</label>
+                    <input type="password" id="adminPassword" placeholder="Enter admin password" required>
+                </div>
+
+                <button type="submit" class="btn-submit">Open Dashboard</button>
+            </form>
+
+            <div class="divider-text">ADMIN PANEL</div>
+
+            <div class="auth-footer">
+                Default admin login uses environment variables `ADMIN_EMAIL` and `ADMIN_PASSWORD`.
+            </div>
+        </div>
+    </div>
+
+    <script src="js/admin.js"></script>
+</body>
+</html>

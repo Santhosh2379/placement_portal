@@ -1,0 +1,103 @@
+/* companies.css */
+.table-container {
+    max-width: 1100px;
+    margin: 40px auto;
+    padding: 0 5%;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.page-header h1 { font-size: 2.2rem; color: var(--text); }
+.page-header p { color: var(--text-muted); }
+
+/* Table Styling */
+.company-table {
+    width: 100%;
+    border-collapse: collapse;
+    background: var(--white);
+    border-radius: 12px;
+    overflow: hidden; /* Rounds the table corners */
+    box-shadow: 0 4px 15px rgba(0,0,0,0.05);
+}
+
+.company-table thead {
+    background: #f1f5f9;
+}
+
+.company-table th {
+    text-align: left;
+    padding: 18px 25px;
+    font-size: 0.85rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: #475569;
+    border-bottom: 2px solid #e2e8f0;
+}
+
+.company-table td {
+    padding: 15px 25px;
+    border-bottom: 1px solid #f1f5f9;
+    vertical-align: middle;
+    color: var(--text);
+    font-size: 0.95rem;
+}
+
+.company-table tbody tr:hover {
+    background: #f8fafc;
+}
+
+/* Brand Icon & Name */
+.table-brand {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-weight: 600;
+}
+
+.mini-icon {
+    width: 35px;
+    height: 35px;
+    background: var(--primary);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-size: 0.75rem;
+    font-weight: 800;
+}
+
+/* Custom Colors for Icons (Optional) */
+.tcs { background: #1e293b; }
+.amazon { background: #ff9900; }
+.google { background: #ea4335; }
+.microsoft { background: #00a4ef; }
+
+/* Button inside table */
+.table-btn {
+    text-decoration: none;
+    color: var(--primary);
+    font-size: 0.85rem;
+    font-weight: 600;
+    padding: 6px 12px;
+    border: 1px solid var(--primary);
+    border-radius: 4px;
+    transition: 0.3s;
+}
+
+.table-btn:hover {
+    background: var(--primary);
+    color: white;
+}
+/* Unique Colors for Table Mini-Icons */
+.nvidia { background: #76b900; }
+.swiggy { background: #fc8019; }
+.fresh { background: #00a1ff; }
+.cap { background: #0070ad; }
+.lti { background: #000000; }
+.jpm { background: #2c3e50; }
+.del { background: #86bc25; }
+.sw { background: #ff6600; }

@@ -1,0 +1,173 @@
+/* home.css */
+.hero {
+    background: linear-gradient(135deg, #0f172a 0%, #1e293b 100%);
+    padding: 120px 10%;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 { font-size: 3.5rem; line-height: 1.2; margin-bottom: 20px; }
+.hero h1 span { color: var(--primary); }
+.hero p { font-size: 1.2rem; color: #94a3b8; max-width: 700px; margin: 0 auto 40px; }
+
+.hero-btns { display: flex; gap: 20px; justify-content: center; }
+.btn-primary { background: var(--primary); color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+.btn-secondary { border: 1px solid #94a3b8; color: white; padding: 15px 30px; border-radius: 8px; text-decoration: none; font-weight: 600; }
+
+/* Stats Bar Overlay */
+.stats-bar {
+    max-width: 1000px;
+    margin: -50px auto 0;
+    background: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+    position: relative;
+    z-index: 10;
+}
+
+.stat-item { text-align: center; }
+.stat-item strong { display: block; font-size: 2rem; color: var(--primary); }
+
+/* Features Section */
+.features { padding: 100px 10%; }
+.section-title { text-align: center; font-size: 2.2rem; margin-bottom: 50px; }
+.feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 30px; }
+.feature-card { background: white; padding: 40px; border-radius: 15px; text-align: center; box-shadow: 0 4px 15px rgba(0,0,0,0.05); }
+.f-icon { font-size: 3rem; margin-bottom: 20px; }
+
+/* Phases Section */
+/* Updated Phases Styling */
+.phases {
+    padding: 100px 10%;
+    background: #f8fafc;
+}
+
+.phase-timeline {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.phase-node {
+    background: white;
+    padding: 30px;
+    border-radius: 12px;
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.02);
+    border: 1px solid #e2e8f0;
+    transition: all 0.3s ease;
+}
+
+.phase-node:hover {
+    transform: translateY(-5px);
+    border-color: var(--primary);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.node-icon {
+    background: var(--primary);
+    color: white;
+    min-width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    font-weight: 800;
+    font-size: 0.9rem;
+}
+
+.node-content h4 {
+    font-size: 1.1rem;
+    color: var(--text);
+    margin-bottom: 8px;
+}
+
+.node-content p {
+    font-size: 0.85rem;
+    color: var(--text-muted);
+    line-height: 1.5;
+}
+
+/* Optional: Adding a connector line look for larger screens */
+@media (min-width: 1024px) {
+    .phase-node {
+        position: relative;
+    }
+}
+
+/* FAQ & About */
+.faq { padding: 100px 10%; }
+.faq-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 30px; }
+.faq-item { background: white; padding: 25px; border-radius: 12px; border: 1px solid #e2e8f0; }
+.faq-item h4 { color: var(--primary); margin-bottom: 10px; }
+
+/* Simplified About Styling */
+.about-section {
+    padding: 100px 10%;
+    background: #ffffff;
+}
+
+.about-text {
+    max-width: 900px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.about-text h2 {
+    font-size: 2rem;
+    color: var(--primary);
+    margin-bottom: 20px;
+}
+
+.about-text > p {
+    font-size: 1.1rem;
+    color: var(--text-muted);
+    line-height: 1.7;
+    margin-bottom: 50px;
+}
+
+.about-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 40px;
+    text-align: left;
+}
+
+.about-item h4 {
+    font-size: 1.2rem;
+    color: var(--text);
+    margin-bottom: 12px;
+    position: relative;
+    padding-left: 15px;
+}
+
+.about-item h4::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 5px;
+    bottom: 5px;
+    width: 4px;
+    background: var(--primary);
+    border-radius: 2px;
+}
+
+.about-item p {
+    font-size: 0.95rem;
+    color: #64748b;
+    line-height: 1.6;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .about-grid {
+        grid-template-columns: 1fr;
+    }
+}
