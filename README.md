@@ -33,7 +33,7 @@ npm start
 - Admin login page: `http://localhost:3000/admin-login.html`
 - Admin dashboard: `http://localhost:3000/admin.html`
 
-Default admin credentials:
+Admin credentials are configured through environment variables:
 
-- Email: `admin@placementpath.local`
-- Password: `admin123`
+  - `ADMIN_EMAIL`
+  - `ADMIN_PASSWORD`
